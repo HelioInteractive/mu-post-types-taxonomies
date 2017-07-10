@@ -41,10 +41,11 @@ function helio_ptt_post_types_init() {
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => '' ),
 		'capability_type'    => 'post',
-		'has_archive'        => true, // set to false if you don't need an archive viwe of this post type
-		'hierarchical'       => false, // false is like post, true is like page
+		'has_archive'        => true, //set to false if you don't need an archive viwe of this post type
+		'hierarchical'       => false, //false is like post, true is like page
 		'menu_position'      => 4,
-		'supports'           => array( 'title', 'editor', 'thumbnail', 'revisions', 'excerpt' )
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'revisions', 'excerpt' ),
+		'menu_icon'   	     => 'dashicons-book' //substitute any dashicon from https://developer.wordpress.org/resource/dashicons/
 	);
 	
 	register_post_type( 'book', $args );
